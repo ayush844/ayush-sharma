@@ -1,5 +1,5 @@
 import Image from "next/image";
-import me from '../../public/images/profile3.jpeg'
+import me from '../../public/images/profile.jpeg'
 
 const Hero = () => {
     return (     <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-8">
