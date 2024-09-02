@@ -8,6 +8,7 @@ import Nodejs from "../../public/icons/nodejs.png"
 import Expressjs from "../../public/icons/express-js-icon.png"
 import Mongodb from "../../public/icons/mongo-db.png"
 import Mysql from "../../public/icons/mysql.png"
+import Firebase from "../../public/icons/firebase.png"
 import Tailwind from "../../public/icons/tailwind.png"
 import Javascript from "../../public/icons/javascript.png"
 import Css from "../../public/icons/css.png"
@@ -29,6 +30,7 @@ const icons = [
     Expressjs,
     Mongodb,
     Mysql,
+    Firebase,
     Tailwind,
     Javascript,
     Css,
