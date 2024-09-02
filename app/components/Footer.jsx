@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="my-12">
+    <footer className=" my-16">
       <p className="mt-2 text-center  text-muted-foreground text-xl">
         made with 💻 and 🛜 by Ayush
       </p>
