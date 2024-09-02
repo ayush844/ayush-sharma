@@ -36,6 +36,7 @@ export function AboutSection() {
           src={me}
           alt="Ayush Sharma"
           className="h-[500px] object-cover rounded-lg w-full"
+          priority
         />
       </div>
     </div>
