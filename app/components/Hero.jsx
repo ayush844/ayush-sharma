@@ -5,10 +5,10 @@ const Hero = () => {
     return (     <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-8">
         <div className="col-span-1 lg:col-span-2 h-full bg-gray-100 min-h-[500px] lg:min-h-[300px] rounded-2xl p-8">
           <h1 className="text-5xl lg:text-7xl font-medium">
-            Hey I am Ayush Sharma 🚀
+            Hey I am Ayush Sharma 🧒
           </h1>
           <h1 className="text-5xl lg:text-6xl font-normal mt-6 ">
-            I am a web developer, working and living in INDIA 🇮🇳
+            I am a web developer, working and living across INDIA 🇮🇳
           </h1>
   
           <a
