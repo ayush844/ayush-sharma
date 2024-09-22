@@ -51,7 +51,7 @@ export async function RecentProjects() {
         <a
           href={item.link}
           key={item._id}
-          className="group block"
+          className="group block bg-gray-100 px-6 py-4 rounded-[10px]"
           target="_blank"
         >
           <div className="aspect-w-16 aspect-h-12 overflow-hidden rounded-2xl relative">
