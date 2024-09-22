@@ -2,6 +2,7 @@ import Image from "next/image";
 import project1 from '../../public/images/project1.png';
 import project2 from '../../public/images/project2.png';
 import project3 from '../../public/images/project3.png';
+import project4 from '../../public/images/project4.png';
 
 const projects = [
     {
@@ -27,6 +28,14 @@ const projects = [
         title: "Elegant Dwell",
         description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, iure! Sunt saepe mollitia temporibus ullam vitae similique iste, eos facilis voluptatibus sit aspernatur culpa inventore soluta voluptatem amet adipisci optio id eaque deleniti cumque nobis, minima officiis? Officia blanditiis non, adipisci laboriosam atque in quae dignissimos earum provident! Quia hic delectus dignissimos quasi aliquid facere fugiat sed reiciendis id nobis.",
         tags: ["NextJS", "ReactJS", "Framer Motion", "Tailwind CSS"]
+    },
+    {
+      _id: 4,
+      link: "https://github.com/ayush844/crypto_flux",
+      imageUrl: project4,
+      title: "Crypto Flux",
+      description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, iure! Sunt saepe mollitia temporibus ullam vitae similique iste, eos facilis voluptatibus sit aspernatur culpa inventore soluta voluptatem amet adipisci optio id eaque deleniti cumque nobis, minima officiis? Officia blanditiis non, adipisci laboriosam atque in quae dignissimos earum provident! Quia hic delectus dignissimos quasi aliquid facere fugiat sed reiciendis id nobis.",
+      tags: ["ReactJS", "Framer Motion", "Tailwind CSS", "Coingecko API"]
     }
 ]
 
@@ -37,7 +46,7 @@ export async function RecentProjects() {
   return (
     <div className=" flex flex-col items-center mt-24">
     <h1 className="text-4xl lg:text-6xl font-bold">My Recent Projects</h1>
-    <div className="py-10 grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12 grid-cols-1 mt-8 mb-8">
+    <div className="py-10 grid md:grid-cols-2 gap-8 sm:gap-6 md:gap-8 lg:gap-12 grid-cols-1 mt-8 mb-8">
       {projects.map((item) => (
         <a
           href={item.link}
