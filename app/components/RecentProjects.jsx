@@ -10,7 +10,7 @@ const projects = [
         link: "https://github.com/ayush844/Tradezy",
         imageUrl: project1,
         title: "Tradezy",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, iure! Sunt saepe mollitia temporibus ullam vitae similique iste, eos facilis voluptatibus sit aspernatur culpa inventore soluta voluptatem amet adipisci optio id eaque deleniti cumque nobis, minima officiis? Officia blanditiis non, adipisci laboriosam atque in quae dignissimos earum provident! Quia hic delectus dignissimos quasi aliquid facere fugiat sed reiciendis id nobis.",
+        description: "Tradezy is an e-commerce platform where users can explore products across categories, add them to their cart, and make purchases. The admin manages all products, with options to add, edit, or delete items.",
         tags: ["ReactJS", "Firebase", "Tailwind CSS"]
     },
     {
@@ -18,7 +18,7 @@ const projects = [
         link: "https://github.com/ayush844/house_mart",
         imageUrl: project2,
         title: "House Mart",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, iure! Sunt saepe mollitia temporibus ullam vitae similique iste, eos facilis voluptatibus sit aspernatur culpa inventore soluta voluptatem amet adipisci optio id eaque deleniti cumque nobis, minima officiis? Officia blanditiis non, adipisci laboriosam atque in quae dignissimos earum provident! Quia hic delectus dignissimos quasi aliquid facere fugiat sed reiciendis id nobis.",
+        description: "HouseMart is a real estate platform where users can rent apartments or list their own properties for rent. Users have full control over their listings, with options to edit or delete them as needed. Additionally, the platform features an integrated map, allowing users to view the exact location of properties, making it easier for both renters and listers to navigate and connect.",
         tags: ["NextJS", "ReactJS", "MongoDB", "Tailwind CSS"]
     },
     {
@@ -26,7 +26,7 @@ const projects = [
         link: "https://github.com/ayush844/HomeDecorFrontend",
         imageUrl: project3,
         title: "Elegant Dwell",
-        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, iure! Sunt saepe mollitia temporibus ullam vitae similique iste, eos facilis voluptatibus sit aspernatur culpa inventore soluta voluptatem amet adipisci optio id eaque deleniti cumque nobis, minima officiis? Officia blanditiis non, adipisci laboriosam atque in quae dignissimos earum provident! Quia hic delectus dignissimos quasi aliquid facere fugiat sed reiciendis id nobis.",
+        description: "Elegant Dwell is a stylish landing page for a home interior design website, emphasizing sleek animations and designs. Built using Framer Motion and Tailwind CSS, it offers a visually engaging experience that highlights modern interior aesthetics.",
         tags: ["NextJS", "ReactJS", "Framer Motion", "Tailwind CSS"]
     },
     {
@@ -34,7 +34,7 @@ const projects = [
       link: "https://github.com/ayush844/crypto_flux",
       imageUrl: project4,
       title: "Crypto Flux",
-      description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, iure! Sunt saepe mollitia temporibus ullam vitae similique iste, eos facilis voluptatibus sit aspernatur culpa inventore soluta voluptatem amet adipisci optio id eaque deleniti cumque nobis, minima officiis? Officia blanditiis non, adipisci laboriosam atque in quae dignissimos earum provident! Quia hic delectus dignissimos quasi aliquid facere fugiat sed reiciendis id nobis.",
+      description: "Crypto Flux is a cryptocurrency tracking platform that monitors around 100 different cryptocurrencies. Users can compare the price, market cap, or total volume of any two cryptocurrencies over a one-year period using detailed graphical data for insightful analysis.",
       tags: ["ReactJS", "Framer Motion", "Tailwind CSS", "Coingecko API"]
     }
 ]
@@ -82,6 +82,18 @@ export async function RecentProjects() {
                 </span>
               ))}
             </div>
+            {item._id == 1 && (
+              <div className=" px-2 py-1 border border-yellow-600 bg-yellow-200 mt-2 flex justify-center rounded-lg">
+                <p className=" font-bold text-yellow-800">Project under construction</p>
+              </div>
+            )}
+
+            {item._id == 4 && (
+              <div className=" px-2 py-1 border border-yellow-600 bg-yellow-200 mt-2 flex justify-center rounded-lg">
+                <p className=" font-bold text-yellow-800">the project is using free version of the coingecko API, so may take some time to respond, if the request limit is reached</p>
+              </div>
+            )}
+
           </div>
         </a>
       ))}
