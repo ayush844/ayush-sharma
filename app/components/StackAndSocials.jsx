@@ -14,6 +14,7 @@ import Javascript from "../../public/icons/javascript.png"
 import Css from "../../public/icons/css.png"
 import Html from "../../public/icons/html.png"
 import Git from "../../public/icons/git.png"
+import Redux from "../../public/icons/redux.png"
 
 
 import Github from "../../public/icons/github.png"
@@ -26,6 +27,7 @@ import { Button } from "@/components/ui/button";
 const icons = [
     Nextjs,
     Reactjs,
+    Redux,
     Nodejs,
     Expressjs,
     Mongodb,
